@@ -7,8 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: 'c'
-
+  name: 'Default'
+  demands:
+    - Agent.Name -equals 'c'
   
 steps:
 - task: Maven@3
