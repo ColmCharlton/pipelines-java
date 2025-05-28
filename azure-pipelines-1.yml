@@ -9,7 +9,7 @@ trigger:
 pool:
   name: 'Azure Pipelines'
   demands:
-    - Agent.Name -equals c
+    - Agent.Name -equals 'Hosted Agent'
 
 steps:
 - task: Maven@3
